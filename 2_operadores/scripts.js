@@ -56,10 +56,16 @@ console.log(!false)
 
 console.log(5 > 2 && 2 < 10)
 console.log(5 < 1 || 2 === 2)
-console.log(!5 > 2)*/
+console.log(!5 > 2)*/ 
 
 // 12 - empty values
 console.log(typeof null, typeof undefined)
 console.log(null == undefined)
 console.log(null == false)
 console.log(undefined == false)
+
+// 13 - changen type
+console.log(5 * null)
+console.log('test' * 'opa')
+console.log('10' + 1)
+console.log('10' - 1)
