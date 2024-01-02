@@ -38,7 +38,7 @@ console.log(Math.sqrt(9))
 
 // 6 - console
 console.log(console.error('mistake'))
-console.log(console.warn(`Aviso`))*/
+console.log(console.warn(`Aviso`))
 
 // 7 - if
 const m = 10
@@ -64,7 +64,7 @@ if(loggedIn) {
     console.log(`Os número não são mais altos`)
 }
 
-// 9 else if
+// 9 - else if
 if(1 > 2) {
     console.log('test')
 }
@@ -83,4 +83,23 @@ if(userName === 'José') {
     console.log(`Olá ${userName}, você tem ${userAge} anos!`)
 } else {
     console.log('Nenhau condição aceita!')
+}
+
+// 10 - while
+let c = 0
+while(c <= 10){
+    console.log(`Passo ${c}`)
+    c+=1
+}
+
+// 11 - do while
+let p = 10
+do {
+    console.log(`Passo ${p}`)
+    p--
+} while(p >= 1)*/
+
+// 12 - for
+for(let i = 10; i >= 1; i--){
+    console.log(`Posso ${i}`)
 }
