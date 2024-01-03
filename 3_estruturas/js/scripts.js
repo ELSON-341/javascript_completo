@@ -97,9 +97,59 @@ let p = 10
 do {
     console.log(`Passo ${p}`)
     p--
-} while(p >= 1)*/
+} while(p >= 1)
 
 // 12 - for
 for(let i = 10; i >= 1; i--){
     console.log(`Posso ${i}`)
+}
+
+// 13 - identação
+let n = 2
+if(n % 2 === 0) {
+    console.log(`A número é par ${n}`)
+}
+console.log(`end!`)
+
+// 14 - breack loop
+for(let g = 20; g > 1; g--) {
+    console.log(`O valor de gé é: ${g}`)
+    if(g === 15) {
+        break
+    }
+}
+
+let num = 1
+while(true) {
+    console.log(`Passo ${num}`)
+    num++
+    if(num == 11) {
+        break
+    }
+}*/
+
+// 15 - continue 
+let vt = [1, 2, 3, 4, 5, 6]
+for(let s in vt) {
+    if(s % 2 === 0) {
+        console.log(`O número ${s} é par!`)
+    } else{
+        continue
+        console.log(`O número ${s} é impar!`)
+    }
+}
+let data = new Date().getDay()
+switch(data) {
+    case 0:
+        console.log('Domingo')
+        break
+    case 1:
+        console.log('Segunda')
+        break
+    case 2:
+        console.log('Terça')
+        break
+    case 3:
+        console.log('Quarta')
+        break
 }
