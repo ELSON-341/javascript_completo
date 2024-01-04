@@ -138,7 +138,10 @@ for(let s in vt) {
         console.log(`O número ${s} é impar!`)
     }
 }
-let data = new Date().getDay()
+
+// 16 - switch
+// let data = new Date().getDay()
+data = 0
 switch(data) {
     case 0:
         console.log('Domingo')
@@ -152,4 +155,27 @@ switch(data) {
     case 3:
         console.log('Quarta')
         break
+    case 4:
+    console.log('Quinta')    
+        break
+    case 5: 
+        console.log('Sexta')
+        break
+    case 6:
+        console.log('Sabado')
+        break
+default:
+    console.log('Dia inválido!')
+}
+
+// switch "errado"
+let l = 100
+switch(l) {
+    case 100:
+    console.log('L é 100!')
+    case 200:
+        console.log('L é 200!')
+}
+function soma(n1, n2) {
+    
 }
