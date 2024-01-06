@@ -1,3 +1,4 @@
+/*
 // 1 - Criando uma função
 function minhaFuncao() {
     console.log('testing')
@@ -52,7 +53,7 @@ function escopoAninhado() {
 escopoAninhado()
 console.log(m)
 
-// arrow fubction
+// 5 - arrow fubction
 const testArrow = () => {
     console.log('Testing')
 }
@@ -66,7 +67,63 @@ const evenOrOdd = (n=0) => {
 }
 
 evenOrOdd(6)
-
+ 
 const squareRoot = (x) => x * x
 
 console.log(squareRoot(4))
+
+// 7 - parametro opcional
+
+const greeting = (name1=0) => {
+    if(!name1) {
+        console.log('Olá')
+    } else {
+        console.log(`Olá ${name1}!`)
+    }
+}
+
+greeting()*/
+
+// 8 - Valor default
+const customGreeting = (name7 = 0, geet = 'Olá') => {
+    return `${geet}, ${name7}!`
+}
+
+console.log(customGreeting('Elson'))
+console.log(customGreeting('Elson', 'Welcome'))
+
+const repeatText = (text, repeat = 2) => {
+    for(let i = 0; i < repeat; i++) {
+        console.log(text)
+    }
+}
+
+repeatText('Testing')
+repeatText('Testing', 5)
+
+// 9 - closure
+function someFunction() {
+    let text = 'Alguma coisa'
+
+    function disply() {
+        console.log(text)
+    }
+    disply()
+}
+
+someFunction()
+
+function displyText() {
+    let text2 = 'Testing'
+
+    function repeat() {
+        let c = 1
+        while(c <= 3) {
+            console.log(text2)
+            c++
+        }
+    }
+    repeat()
+}
+
+displyText()
