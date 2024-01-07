@@ -127,3 +127,42 @@ function displyText() {
 }
 
 displyText()
+
+// 10 - Mais sobre closure
+
+const multiplicationClosure = (n) => {
+    return (m) => {
+        return n * m
+    }
+}
+
+let f1 = multiplicationClosure(5)
+let f2 = multiplicationClosure(10)
+console.log(f1)
+
+console.log(f1(5))
+console.log(f1(10))
+ 
+// recursion
+const untlTen = (n, p) => {
+    if(n < 10) {
+        console.log('A função parou de executar!')
+    } else {
+        const x = n - p
+        console.log(x)
+        untlTen(x, p)
+    }
+}
+
+console.log(untlTen(100, 7))
+
+function facturial(x) {
+    if(x === 0) {
+        return 1
+    } else {
+        return x * facturial(x - 1)
+    }
+}
+
+console.log(typeof facturial(5))
+console.log(typeof function (){})
