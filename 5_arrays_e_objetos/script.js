@@ -55,3 +55,36 @@ console.log(car)
 delete car.km
 console.log(car)
 console.log(car.doors)
+
+// 7 - mais sobre objetos
+const obj = {
+    a: 'test',
+    b: true
+}
+
+console.log(obj instanceof Object)
+ const obj2 = {
+    c: [],
+ }
+
+ Object.assign(obj, obj2)
+ console.log(obj)
+ console.log(obj2)
+
+ const regiter = {
+    name: 'Elson',
+    age: 21
+ }
+
+ const test ={
+    text: 2
+ }
+ Object.assign(regiter, test)
+ console.log(regiter)
+
+//  8 - conphecimen melhor os objetos
+console.log(Object.keys(obj))
+console.log(Object.keys(obj2))
+console.log(Object.keys(car))
+
+console.log(Object.entries(car))
