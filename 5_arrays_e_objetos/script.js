@@ -81,6 +81,7 @@ console.log(obj instanceof Object)
  }
  Object.assign(regiter, test)
  console.log(regiter)
+ console.log(test)
 
 //  8 - conphecimen melhor os objetos
 console.log(Object.keys(obj))
@@ -88,3 +89,36 @@ console.log(Object.keys(obj2))
 console.log(Object.keys(car))
 
 console.log(Object.entries(car))
+
+// 9 - Mutação
+const a = {
+    name:'Elson'
+}
+
+const b = a
+console.log(a === b)
+
+a.age = 21
+
+delete b.age
+console.log(a)
+console.log(b)
+
+// 10 - loop in arrays
+const user = ['Matheus', 'João', 'Ana']
+for(let i = 0; i < user.length; i = i + 1) {
+    console.log(`Listando o usuário: ${user[i]}`)
+}
+for(let u in user){
+    console.log(`Listando o usuário: ${user[u]}`)
+}
+user.forEach(x => console.log(x))
+console.log(user[0])
+
+// 11 - push and pop
+const array = ['a', 'b', 'c']
+array.push('d')
+
+array.pop()
+const itemRemovido = array.pop()
+console.log(itemRemovido)
