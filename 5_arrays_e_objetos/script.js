@@ -1,5 +1,5 @@
 // 1 - arrays
-const lista = [1, 2, 3, 4, 5]
+/*const lista = [1, 2, 3, 4, 5]
 console.log(lista)
 console.log(typeof lista)
 const itens = ['tes', true, 3, 5.5, []]
@@ -121,4 +121,35 @@ array.push('d')
 
 array.pop()
 const itemRemovido = array.pop()
-console.log(itemRemovido)
+console.log(itemRemovido)*/
+
+// 12 - shift and unshift
+const letters = ['a', 'b', 'c']
+const letter = letters.shift()
+letters.unshift(letter, 1, 2, 3)
+console.log(letter)
+console.log(letters)
+
+// 13 - indexOf and lastIndexOf
+const myElements = ['Morango', 'Maçã', 'Abacate', 'pêra', 'Abacate']
+
+console.log(myElements.indexOf('Maçã'))
+console.log(myElements.indexOf('Abacate'))
+
+console.log(myElements[2])
+console.log(myElements[myElements.indexOf('Abacate')])
+
+console.log(myElements.lastIndexOf('Abacate'))
+
+// 14 - slice
+
+const testSlice = ['a', 'b', 'c', 'd', 'e', 'f',]
+
+const subArray = testSlice.slice(2, 4 + 1)
+console.log(subArray)
+
+const subArray3 = testSlice.slice(10, 20)
+console.log(subArray3)
+
+const subArray4 = testSlice.slice(2)
+console.log(subArray4)
