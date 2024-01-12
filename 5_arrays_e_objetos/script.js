@@ -153,3 +153,33 @@ console.log(subArray3)
 
 const subArray4 = testSlice.slice(2)
 console.log(subArray4)
+
+// 15 - forEach
+const alphabet = ['a', 'b', 'c', 'd', 'e']
+alphabet.forEach((abc) => {
+    console.log(`Letra ${abc}.`)
+})
+
+const posts = [
+    { title: 'Primero post', category: 'PHP'},
+    { title: 'Segundo post', category: 'JavaScript'},
+    { title: 'Terceiro post', category: 'Python'}
+]
+
+posts.forEach((post) => {
+    console.log(`Exebido post: ${post.title}, categoria ${post.category}`)
+})
+
+// 16 - inclusdes
+const shoppingList = ['coffe', 'tea', 'sugar']
+console.log(shoppingList.includes('salt'))
+
+if(shoppingList.includes('tea')) {
+    console.log('Há chá na lista!')
+}
+
+// 17 - reverse
+const numbers = [1, 2, 3, 4]
+numbers.reverse()
+console.log(numbers)
+
