@@ -183,3 +183,37 @@ const numbers = [1, 2, 3, 4]
 numbers.reverse()
 console.log(numbers)
 
+// 18 - trim
+const nome = 'Elson \n'
+console.log(nome)
+console.log(nome.length)
+
+console.log(nome.trim().length)
+
+// 19 - padStart
+const testPadStart = '1'
+const newNumber = testPadStart.padStart(4, '0')
+console.log(newNumber)
+
+const testPadEnd = newNumber.padEnd(10, '0')
+console.log(testPadEnd)
+newNumber.match()
+
+// 20 - split
+const userName = 'Elson Santos Nascimento'
+console.log(userName.split(' '));
+
+// 21 - join
+const phrase = 'O rato roeu a roupa do rei de roma'
+const phraseAgin = phrase.split(' ')
+console.log(phraseAgin);
+const fraseDeNovo = phraseAgin.join(' ')
+console.log(fraseDeNovo);
+
+const itemForShopping = ['Mouse', 'Teclado', 'Monitor']
+const phraseShopping = `Precisamos comprar: ${itemForShopping.join(', ')}`
+console.log(phraseShopping);
+
+// 22 - repeat
+const testRepeat = 'testing '
+console.log(testRepeat.repeat(3));
