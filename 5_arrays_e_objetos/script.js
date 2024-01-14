@@ -256,7 +256,29 @@ console.log(primeiraNome)
 console.log(tes)
 
 // 26 - destruction com arays
-const myList = ['Avião', 'Submarino', 'corro', 'Trastor']
+const myList = ['Avião', 'Submarino', 'carro', 'Trastor']
 const [veicoloA, veicoloB, veicoloC, veicoloD, t] = myList
 console.log(veicoloA, veicoloB, veicoloC, veicoloD, t)
 console.log(t)
+
+// 27 - JSON
+const myjson = '{"name": "Elson", "age": 21, "skills": ["PHP", "javaSript", "Python"]}'
+console.log(myjson)
+console.log(typeof myjson)
+
+// 28 - JSON para object e object para JSON
+const myObject = JSON.parse(myjson)
+console.log(myObject)
+console.log(typeof myObject)
+console.log(myObject.name);
+console.log(myObject.age);
+
+// JSON inválido
+const badJson = '{"name": Elson, "age": 21}'
+// const mybadObject = JSON.parse(badJson)
+// console.log(mybadObject);
+
+const myNewJson = JSON.stringify(myObject)
+console.log(myNewJson);
+
+console.log(typeof myNewJson);
