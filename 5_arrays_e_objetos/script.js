@@ -17,9 +17,10 @@
 // const myName = 'Elson'
 // console.log(myName['length'])
 
-// // 4 - métados
+// 4 - métados
 // const otherNumbers = [1, 2, 3]
-// const allNumbers = numbers.concat(otherNumbers)
+// const num = [10, 15, 12]
+// const allNumbers = numbers.concat(otherNumbers, num)
 // allNumbers.push()
 // allNumbers.concat()
 // allNumbers.pop()
@@ -43,11 +44,11 @@
 // console.log(typeof person)
 
 // // 6 - criando e deletando propriedades
-// const car = {
-//     engine: 2.0,
-//     brand: 'BMW',
-//     km: 2000
-// }
+const car = {
+    engine: 2.0,
+    brand: 'BMW',
+    km: 2000
+}
 
 // console.log(car)
 // car.doors = 4
@@ -83,14 +84,16 @@
 //  console.log(regiter)
 //  console.log(test)
 
-// //  8 - conphecimen melhor os objetos
+//  8 - conphecimen melhor os objetos
 // console.log(Object.keys(obj))
 // console.log(Object.keys(obj2))
 // console.log(Object.keys(car))
 
+// console.log(Object.keys(car))
 // console.log(Object.entries(car))
 
-// // 9 - Mutação
+
+// 9 - Mutação
 // const a = {
 //     name:'Elson'
 // }
@@ -196,8 +199,9 @@
 // console.log(newNumber)
 
 // const testPadEnd = newNumber.padEnd(10, '0')
-// console.log(testPadEnd)
 // newNumber.match()
+// console.log(newNumber);
+// console.log(testPadEnd)
 
 // // 20 - split
 // const userName = 'Elson Santos Nascimento'
@@ -229,56 +233,56 @@
 
 // console.log(sumInfinite(2, 5, 1, 2));
 
-// 24 - for of
-const sumInfinite2 = (...args) => {
-    let total = 0
-    for (num of args) {
-        total += num
-    }
-    return total
-}
+// // 24 - for of
+// const sumInfinite2 = (...args) => {
+//     let total = 0
+//     for (num of args) {
+//         total += num
+//     }
+//     return total
+// }
 
-console.log(sumInfinite2(2, 5, 1, 2));
+// console.log(sumInfinite2(2, 5, 1, 2));
 
-// 25 - destruring em object
-const userDetails = {
-    firstName: 'Elson',
-    lastName: 'Santos',
-    job: 'Programador'
-}
+// // 25 - destruring em object
+// const userDetails = {
+//     firstName: 'Elson',
+//     lastName: 'Santos',
+//     job: 'Programador'
+// }
 
-const {firstName, lastName, job} = userDetails
-console.log(firstName, lastName, job)
+// const {firstName, lastName, job} = userDetails
+// console.log(firstName, lastName, job)
 
-// renomear variaveis
-const {firstName: primeiraNome, tes} = userDetails
-console.log(primeiraNome)
-console.log(tes)
+// // renomear variaveis
+// const {firstName: primeiraNome, tes} = userDetails
+// console.log(primeiraNome)
+// console.log(tes)
 
-// 26 - destruction com arays
-const myList = ['Avião', 'Submarino', 'carro', 'Trastor']
-const [veicoloA, veicoloB, veicoloC, veicoloD, t] = myList
-console.log(veicoloA, veicoloB, veicoloC, veicoloD, t)
-console.log(t)
+// // 26 - destruction com arays
+// const myList = ['Avião', 'Submarino', 'carro', 'Trastor']
+// const [veicoloA, veicoloB, veicoloC, veicoloD, t] = myList
+// console.log(veicoloA, veicoloB, veicoloC, veicoloD, t)
+// console.log(t)
 
-// 27 - JSON
-const myjson = '{"name": "Elson", "age": 21, "skills": ["PHP", "javaSript", "Python"]}'
-console.log(myjson)
-console.log(typeof myjson)
+// // 27 - JSON
+// const myjson = '{"name": "Elson", "age": 21, "skills": ["PHP", "javaSript", "Python"]}'
+// console.log(myjson)
+// console.log(typeof myjson)
 
-// 28 - JSON para object e object para JSON
-const myObject = JSON.parse(myjson)
-console.log(myObject)
-console.log(typeof myObject)
-console.log(myObject.name);
-console.log(myObject.age);
+// // 28 - JSON para object e object para JSON
+// const myObject = JSON.parse(myjson)
+// console.log(myObject)
+// console.log(typeof myObject)
+// console.log(myObject.name);
+// console.log(myObject.age);
 
-// JSON inválido
-const badJson = '{"name": Elson, "age": 21}'
-// const mybadObject = JSON.parse(badJson)
-// console.log(mybadObject);
+// // JSON inválido
+// const badJson = '{"name": Elson, "age": 21}'
+// // const mybadObject = JSON.parse(badJson)
+// // console.log(mybadObject);
 
-const myNewJson = JSON.stringify(myObject)
-console.log(myNewJson);
+// const myNewJson = JSON.stringify(myObject)
+// console.log(myNewJson);
 
-console.log(typeof myNewJson);
+// console.log(typeof myNewJson);
