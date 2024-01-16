@@ -210,8 +210,10 @@ const car = {
 // // 21 - join
 // const phrase = 'O rato roeu a roupa do rei de roma'
 // const phraseAgin = phrase.split(' ')
+// console.log(typeof phraseAgin);
 // console.log(phraseAgin);
 // const fraseDeNovo = phraseAgin.join(' ')
+// console.log(typeof fraseDeNovo);
 // console.log(fraseDeNovo);
 
 // const itemForShopping = ['Mouse', 'Teclado', 'Monitor']
