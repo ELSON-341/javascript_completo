@@ -25,6 +25,7 @@
 // console.log(pessoas.getNome());
 // pessoas.setNome('Matheus')
 // console.log(pessoas.getNome());
+// console.log(pessoas.nome)
 
 // // 3 - prototype
 // const str = 'test'
@@ -87,6 +88,8 @@
 // }
 
 // const husky = new Cachorro('Zeus', 'Pitbull');
+// console.log(husky)
+// console.log(Object.getPrototypeOf(husky))
 
 // // 8 - métodos na função construtora
 // Cachorro.prototype.uivar = function() {
@@ -95,8 +98,9 @@
 
 // console.log(Cachorro.prototype)
 // husky.uivar()
+// console.log(Object.getPrototypeOf(husky))
 
-// //  9 - classes es6
+//  9 - classes es6
 // class CachorroClasse {
 //     constructor(nome, raca) {
 //         this.nome = nome
@@ -107,21 +111,22 @@
 // const jeff = new CachorroClasse('Jeff', 'Labrador')
 // console.log(jeff)
 // console.log(Object.getPrototypeOf(jeff))
-// // 10 - mais sobro classes 
-// class Caminhao {
-//     constructor(eixos, cor) {
-//         this.eixos = eixos
-//         this.cor = cor
-//     }
 
-//     descreverCaminhao() {
-//         console.log(`Este caminhão tem ${this.eixos} eixos e é da cor ${this.cor}`)
-//     }
-// }
+// 10 - mais sobro classes 
+class Caminhao {
+    constructor(eixos, cor) {
+        this.eixos = eixos
+        this.cor = cor
+    }
 
-// const scania = new Caminhao(6, 'Vermelho')
-// console.log(scania)
-// scania.descreverCaminhao()
+    descreverCaminhao() {
+        console.log(`Este caminhão tem ${this.eixos} eixos e é da cor ${this.cor}`)
+    }
+}
+
+const scania = new Caminhao(6, 'Vermelho')
+console.log(scania)
+scania.descreverCaminhao()
 
 // Caminhao.motor = 4
 // const c2 = new Caminhao(4, 'Preta')
@@ -147,65 +152,65 @@
 // console.log(Humano.prototype.idade);
 // console.log(elson.idade);
 
-// 12 - symbol
-class Aviao {
-    constructor(marca, turbinas) {
-        this.marca = marca
-        this.turbinas = turbinas
-    }
-}
+// // 12 - symbol
+// class Aviao {
+//     constructor(marca, turbinas) {
+//         this.marca = marca
+//         this.turbinas = turbinas
+//     }
+// }
 
-const asas = Symbol()
-const pilotos = Symbol()
-Aviao.prototype[pilotos] = 3
-Aviao.prototype[asas] = 2
-const boeing = new Aviao('Boing', 10)
-console.log(boeing)
-console.log(boeing[asas])
-console.log(boeing[pilotos]);
+// const asas = Symbol()
+// const pilotos = Symbol()
+// Aviao.prototype[pilotos] = 3
+// Aviao.prototype[asas] = 2
+// const boeing = new Aviao('Boing', 10)
+// console.log(boeing)
+// console.log(boeing[asas])
+// console.log(boeing[pilotos]);
 
-// getter e  setter
-class Post {
-    constructor(titulo, descricao, tags) {
-        this.titulo = titulo
-        this.descricao = descricao
-        this.tags = tags
-    }
+// // getter e  setter
+// class Post {
+//     constructor(titulo, descricao, tags) {
+//         this.titulo = titulo
+//         this.descricao = descricao
+//         this.tags = tags
+//     }
 
-    get exbirTitulo() {
-        return `Você está lendo ${this.titulo}`
-    }
+//     get exbirTitulo() {
+//         return `Você está lendo ${this.titulo}`
+//     }
 
-    set adicionarTags(tags) {
-        const tagsArrays = tags.split(', ')
-        this.tags = tagsArrays
-    }
-}
+//     set adicionarTags(tags) {
+//         const tagsArrays = tags.split(', ')
+//         this.tags = tagsArrays
+//     }
+// }
 
-const mypost = new Post('Algum post', 'É um post sobre programação')
-console.log(mypost);
-console.log(mypost.exbirTitulo);
+// const mypost = new Post('Algum post', 'É um post sobre programação')
+// console.log(mypost);
+// console.log(mypost.exbirTitulo);
 
-mypost.adicionarTags = 'programção, javacript, js'
-console.log(mypost)
+// mypost.adicionarTags = 'programção, javacript, js'
+// console.log(mypost)
 
-// Herançã
-class Mamifero {
-    constructor(patas=4) {
-        this.patas = patas
-    }
-}
+// // Herançã
+// class Mamifero {
+//     constructor(patas=4) {
+//         this.patas = patas
+//     }
+// }
 
-class lobo extends Mamifero {
-    constructor(patas, nome) {
-        super(patas)
-        this.nome = nome
-    }
-}
+// class lobo extends Mamifero {
+//     constructor(patas, nome) {
+//         super(patas)
+//         this.nome = nome
+//     }
+// }
 
-const shark = new lobo()
-console.log(shark)
-console.log(shark.patas)
+// const shark = new lobo()
+// console.log(shark)
+// console.log(shark.patas)
 
 // const cacharro = new Mamifero()
 // console.log(cacharro)
