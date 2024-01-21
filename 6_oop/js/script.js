@@ -186,22 +186,22 @@
 // console.log(`Quantidade de pilotos: ${boeing[pilotos]}`);
 
 // // 13 - getter e setter
-// class Post {
-//     constructor(titulo, descricao, tags) {
-//         this.titulo = titulo
-//         this.descricao = descricao
-//         this.tags = tags
-//     }
+class Post {
+    constructor(titulo, descricao, tags) {
+        this.titulo = titulo
+        this.descricao = descricao
+        this.tags = tags
+    }
 
-//     get exbirTitulo() {
-//         return `Você está lendo ${this.titulo}`
-//     }
+    get exbirTitulo() {
+        return `Você está lendo ${this.titulo}`
+    }
 
-//     set adicionarTags(tags) {
-//         const tagsArrays = tags.split(', ')
-//         this.tags = tagsArrays
-//     }
-// }
+    set adicionarTags(tags) {
+        const tagsArrays = tags.split(', ')
+        this.tags = tagsArrays
+    }
+}
 
 // const mypost = new Post('Algum post', 'É um post sobre programação')
 // console.log(mypost);
@@ -217,7 +217,7 @@ class Mamifero {
     }
 }
 
-class lobo extends Mamifero {
+class Lobo extends Mamifero {
     constructor(patas, nome) {
         super(patas)
         this.nome = nome
@@ -225,9 +225,15 @@ class lobo extends Mamifero {
     }
 }
 
-const shark = new lobo(4, 'teste')
+const shark = new Lobo(4, 'teste')
 console.log(shark)
 console.log(shark.patas)
 
 const cacharro = new Mamifero()
 console.log(cacharro)
+
+// 15 - instanceof
+console.log(shark instanceof Lobo)
+console.log(Lobo instanceof Mamifero)
+console.log(new Lobo(4, 'test') instanceof Mamifero)
+console.log(new Post('a', 'b') instanceof Lobo)
