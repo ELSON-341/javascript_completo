@@ -22,5 +22,3 @@ if(2 > 5) {
     a = 25
 }
 console.log(a);
-
-
