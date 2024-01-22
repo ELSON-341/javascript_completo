@@ -87,3 +87,13 @@ try {
 } finally {
     console.log('O código foi executado!')
 }
+// 8 - assertion
+function checkArray(arr) {
+    const array = arr.length 
+    if (array === 0) {
+        throw new Error(`O array tem ${array} elementos`)
+    }
+}
+
+// checkArray([])
+checkArray([1, 5, 7])
