@@ -5,95 +5,97 @@
 // const undefined = 10
 // delete [].length
 
-// 2 - console.log
-let a = 1 
-let b = 2
-if(a == 1) {
-    a = b + 2
-}
-console.log(a)
+// // 2 - console.log
+// let a = 1 
+// let b = 2
+// if(a == 1) {
+//     a = b + 2
+// }
+// console.log(a)
 
-for(let i = 0; i < b; i++) {
-    a = a + 2
-    console.log(a);
-}
+// for(let i = 0; i < b; i++) {
+//     a = a + 2
+//     console.log(a);
+// }
 
-if(2 > 5) {
-    a = 25
-}
-console.log(a);
+// if(2 > 5) {
+//     a = 25
+// }
+// console.log(a);
 
-// 3 - debugger
-let c = 1
-let d = 2
-if(c == 1){
-    c = d + 2
-}
-
-// debugger;
-
-for(let i = 0; i < d; i++){
-    c = c + 2
-}
-
-console.log('Executor o loop');
+// // 3 - debugger
+// let c = 1
+// let d = 2
+// if(c == 1){
+//     c = d + 2
+// }
 
 // debugger
 
-if(c > 5) {
-    c = 25
-}
+// for(let i = 0; i < d; i++){
+//     c = c + 2
+// }
 
-// 4 - tratamento de dados
-function checkNumber(n) {
-    const result = Number(n)
+// console.log('Executor o loop');
 
-    if(Number.isNaN(result)) {
-        console.log(`O valor ${n} é inválido!`)
-        return
-    }
+// debugger
 
-    console.log('Volor validor!')
-    return result
-}
+// if(c > 5) {
+//     c = 25
+// }
 
-checkNumber(5)
-checkNumber('10')
-checkNumber({})
-checkNumber('test')
+// debugger
+
+// // 4 - tratamento de dados
+// function checkNumber(n) {
+//     const result = Number(n)
+
+//     if(Number.isNaN(result)) {
+//         console.log(`O valor ${n} é inválido!`)
+//         return
+//     }
+
+//     console.log('Volor validor!')
+//     return result
+// }
+
+// checkNumber(5)
+// checkNumber('10')
+// checkNumber({})
+// checkNumber('test')
 
 // 5 - exceptions
-let x = 10
+// let x = 10
 
-if(x != 11) {
-    // throw new Error('O valor de x não pode ser diferente de 11!')
-}
+// if(x != 11) {
+//     throw new Error('O valor de x não pode ser diferente de 11!')
+// }
 
-// 6 - try catch
-try {
-    const soma = x + y
-} catch(error) {
-    console.log(`Erro no programa: ${error}`)
-}
+// // 6 - try catch
+// try {
+//     const soma = x + y
+// } catch(error) {
+//     console.log(`Erro no programa: ${error}`)
+// }
 
-// 7 - finally
-try {
-    const value = checkNumber('asd') 
-    if(!value) {
-        throw new Error('Valores inválidos')
-    }
-} catch(error) {
-    console.log(`Opa, aconteceu um problema: ${error}`)
-} finally {
-    console.log('O código foi executado!')
-}
-// 8 - assertion
-function checkArray(arr) {
-    const array = arr.length 
-    if (array === 0) {
-        throw new Error(`O array tem ${array} elementos`)
-    }
-}
+// // 7 - finally
+// try {
+//     const value = checkNumber('asd')
+//     if(!value) {
+//         throw new Error('Valores inválidos')
+//     }
+// } catch(error) {
+//     console.log(`Opa, aconteceu um problema: ${error}`)
+// } finally {
+//     console.log('O código foi executado!')
+// }
+// // 8 - assertion
+// function checkArray(arr) {
+//     const array = arr.length 
+//     if (array === 0) {
+//         throw new Error(`O array tem ${array} elementos`)
+//     }
+// }
 
 // checkArray([])
-checkArray([1, 5, 7])
+// checkArray([1, 5, 7])
