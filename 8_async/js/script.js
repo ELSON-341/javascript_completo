@@ -87,3 +87,22 @@ sumWithDelay(2, 4).then((value) => {
 })
 
 console.log('test async')
+
+// 7 - async await
+function resolveComDelay() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('Resolveu a Promise')
+        }, 3000)
+    })
+}
+
+async function chamadaAsync() {
+    console.log('chamando a Promise, e esperando o resultado')
+    const result = await resolveComDelay()
+    console.log(`O resultedo chegou: ${result}`)
+}
+
+chamadaAsync()
+
+// 9 - generator
