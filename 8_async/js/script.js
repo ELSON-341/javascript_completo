@@ -38,23 +38,52 @@
 // })
 // .catch((err) => console.log(`Um erro ocorreu: ${err}!`))
 
-// 5 - rejeição
-function checkNumber(n) {
-    return new Promise((resolve, reject) => {
-        if (n > 10) {
-            resolve('O número é maior que 10.')
-        }
-        else {
-            reject(new Error('Número muito baixo'))
-        }
-    })
+// // 5 - rejeição
+// function checkNumber(n) {
+//     return new Promise((resolve, reject) => {
+//         if (n > 10) {
+//             resolve('O número é maior que 10.')
+//         }
+//         else {
+//             reject(new Error('Número muito baixo'))
+//         }
+//     })
+// }
+
+// const a = checkNumber(11)
+// const b = checkNumber(10)
+
+// console.log(a, b); 
+// a.then((v) => console.log(`O resultado é ${v}`)).catch((err) => console.log(`Ocorreu um erro! ${err}`))
+// b.then((v) => console.log(`O resultado é ${v}`)).catch((err) => console.log(`Ocorreu um erro! ${err}`))
+
+// 6 - resolvendo varias promises
+const p1 = new Promise((resolve, reject) => {
+    setTimeout(function () {
+        resolve(10)
+    }, 3000)
+})
+
+const p2 = Promise.resolve(10 + 10)
+
+const p3 = new Promise((resolve, reject) => {
+    if (30 > 10) {
+        resolve(30)
+    } else {
+        reject(`Erro!`)
+    }
+})
+
+const result = Promise.all([p1, p2, p3]).then((value) => console.log(value))
+console.log(result)
+
+// 7 - async function
+async function sumWithDelay(a, b) {
+    return a + b
 }
 
-const a = checkNumber(11)
-const b = checkNumber(10)
+sumWithDelay(2, 4).then((value) => {
+    console.log(`O valor da soma é ${value}`)
+})
 
-a.then((v) => console.log(`O vesultado é ${v}`)).catch((err) => 
-console.log(`Um erro ocorreu: ${err}`))
-
-b.then((v) => console.log(`O vesultado é ${v}`)).catch((err) => 
-console.log(`Um erro ocorreu: ${err}`))
+console.log('test async')
