@@ -57,52 +57,61 @@
 // a.then((v) => console.log(`O resultado é ${v}`)).catch((err) => console.log(`Ocorreu um erro! ${err}`))
 // b.then((v) => console.log(`O resultado é ${v}`)).catch((err) => console.log(`Ocorreu um erro! ${err}`))
 
-// 6 - resolvendo varias promises
-const p1 = new Promise((resolve, reject) => {
-    setTimeout(function () {
-        resolve(10)
-    }, 3000)
-})
+// // 6 - resolvendo varias promises
+// const p1 = new Promise((resolve, reject) => {
+//     setTimeout(function () {
+//         resolve(10)
+//     }, 3000)
+// })
 
-const p2 = Promise.resolve(10 + 10)
+// const p2 = Promise.resolve(10 + 10)
 
-const p3 = new Promise((resolve, reject) => {
-    if (30 > 10) {
-        resolve(30)
-    } else {
-        reject(`Erro!`)
-    }
-})
+// const p3 = new Promise((resolve, reject) => {
+//     if (30 > 10) {
+//         resolve(30)
+//     } else {
+//         reject(`Erro!`)
+//     }
+// })
 
-const result = Promise.all([p1, p2, p3]).then((value) => console.log(value))
-console.log(result)
+// const result = Promise.all([p1, p2, p3]).then((value) => console.log(value))
+// console.log(result)
 
-// 7 - async function
-async function sumWithDelay(a, b) {
-    return a + b
-}
+// // 7 - async function
+// async function sumWithDelay(a, b) {
+//     return a + b
+// }
 
-sumWithDelay(2, 4).then((value) => {
-    console.log(`O valor da soma é ${value}`)
-})
+// sumWithDelay(2, 4).then((value) => {
+//     console.log(`O valor da soma é ${value}`)
+// })
 
-console.log('test async')
+// console.log('test async')
 
-// 7 - async await
-function resolveComDelay() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve('Resolveu a Promise')
-        }, 3000)
-    })
-}
+// // 7 - async await
+// function resolveComDelay() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve('Resolveu a Promise')
+//         }, 3000)
+//     })
+// }
 
-async function chamadaAsync() {
-    console.log('chamando a Promise, e esperando o resultado')
-    const result = await resolveComDelay()
-    console.log(`O resultedo chegou: ${result}`)
-}
+// async function chamadaAsync() {
+//     console.log('chamando a Promise, e esperando o resultado')
+//     const result = await resolveComDelay()
+//     console.log(`O resultedo chegou: ${result}`)
+// }
 
-chamadaAsync()
+// chamadaAsync()
 
 // 9 - generator
+function* generator() {
+    yield 1
+    yield 2
+    yield 3
+}
+
+const gen = generator()
+console.log(gen.next().value)
+console.log(gen.next().value)
