@@ -4,16 +4,16 @@
 
 // setTimeout(function() {
 //     console.log('Requisição assícrona')
-// }, 2000)
+// }, 6000)
 
 // console.log(`Ainda não executou 2`);
 
-// // 2 - setInterval
+// 2 - setInterval
 // console.log(`Ainda não começou`)
 
-// // setInterval(function() {
-// //     console.log(`Requisição assíncrona`)
-// // }, 3000)
+// setInterval(function() {
+//     console.log(`Requisição assíncrona`)
+// }, 6000)
 
 // console.log(`Ainda não começou`)
 
@@ -27,7 +27,7 @@
 //     return value
 // })
 // .then((value) => value - 1)
-// promessa.then((value) => console.log(`Agora é ${value}`))
+// .then((value) => console.log(`Agora é ${value}`))
 
 // // 4 - falha na promise
 // Promise.resolve(4 * 'asd')
@@ -114,4 +114,4 @@ function* generator() {
 
 const gen = generator()
 console.log(gen.next().value)
-console.log(gen.next().value)
+console.log(gen.next())
