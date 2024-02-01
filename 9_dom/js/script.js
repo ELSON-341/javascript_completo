@@ -21,3 +21,25 @@ console.log(produtsQury);
 
 const mainContainer = window.document.querySelector('#main-container')
 console.log(mainContainer);
+
+// 6 - insertBefore
+const p = window.document.createElement('p')
+p.innerHTML = 'test'
+const header = title.parentElement
+header.insertBefore(p, title)
+
+// 7 - appendChild
+const navLinks = window.document.querySelector('nav ul')
+const li = window.document.createElement('li')
+navLinks.appendChild(li)
+
+// 8 - replaceChild
+const h2 = window.document.createElement('h2')
+h2.innerHTML = 'My new title'
+header.replaceChild(h2, title)
+
+const mytext = window.document.createTextNode('Agora vamos colocar mais um título')
+console.log(mytext);
+const h3 = window.document.createElement('h3')
+h3.appendChild(mytext)
+console.log(h3)
