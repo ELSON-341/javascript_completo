@@ -38,8 +38,32 @@ const h2 = window.document.createElement('h2')
 h2.innerHTML = 'My new title'
 header.replaceChild(h2, title)
 
+// 9 - createTextNode
 const mytext = window.document.createTextNode('Agora vamos colocar mais um título')
 console.log(mytext);
 const h3 = window.document.createElement('h3')
 h3.appendChild(mytext)
 console.log(h3)
+
+// 10 - abalhando com atributos
+const firstLink = navLinks.querySelector('a')
+console.log(firstLink)
+firstLink.setAttribute('href', 'https://www.google.com')
+console.log(firstLink.getAttribute('href'));
+firstLink.setAttribute('target', '_blank')
+console.log(firstLink.getAttribute('target'))
+firstLink.setAttribute('hreflang', 'pt-br')
+firstLink.setAttribute('rel', 'external')
+
+// 11 - altura e largura
+const footer = window.document.querySelector('footer')
+console.log(footer);
+console.log(footer.offsetWidth);
+console.log(footer.offsetHeight);
+console.log(footer.clientWidth);
+console.log(footer.clientHeight);
+
+// 12 - posição do elemento
+const product1 = products[0]
+console.log(product1.getBoundingClientRect())
+
