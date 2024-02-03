@@ -67,3 +67,14 @@ console.log(footer.clientHeight);
 const product1 = products[0]
 console.log(product1.getBoundingClientRect())
 
+// 13 - css com js
+mainContainer.style.color = 'red'
+mainContainer.style.background = 'lightgray'
+mainContainer.style.paddingTop = '15px'
+mainContainer.style.paddingTop = '15px'
+
+// 14 - alterando varios elementos
+for(let li of listItens) {
+    li.style.color = 'purple'
+}
+
