@@ -76,4 +76,3 @@ const li = window.document.createElement('li')
 for(let li of listItens) {
     li.style.color = 'red'
 }
-
