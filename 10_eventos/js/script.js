@@ -80,4 +80,26 @@ mouseEvents.addEventListener('dblclick', () => {
 //     console.log(`No exixo Y ${e.y}`);
 // })
 
-9
+// 9 - evnet scroll
+window.addEventListener('scroll', (e) => {
+    if(window.scrollY > 200){
+        console.log('Passamos de 200px')
+    }
+})
+
+// 10 - event focus
+const input = window.document.getElementById('my-input')
+input.addEventListener('focus', (e) => {
+    console.log('Entrou no input!')
+})
+
+// 11 - event de carregamento
+window.addEventListener('load', (e) => {
+    console.log('A pagina carregou!');
+})
+window.addEventListener('beforeunload', (e) => {
+    e.preventDefault()
+    e.returnValue = ''
+    console.log('A pagina carregou!');
+})
+
