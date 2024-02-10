@@ -103,3 +103,20 @@ window.addEventListener('beforeunload', (e) => {
     console.log('A pagina carregou!');
 })
 
+// 1 - debouce
+const debouce = (f, delay) => {
+    let timeout
+
+    return (...argumentos) => {
+        if(timeout) {
+            clearTimeout(timeout)
+        }
+        timeout = setTimeout(() => {
+            f.apply(argumentos)
+        }, delay)
+    }
+}
+
+window.addEventListener('mousemove', debouce(() => {
+    console.log('Executando a cada 400ms')
+}, 400))
