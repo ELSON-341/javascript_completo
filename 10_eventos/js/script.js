@@ -14,7 +14,6 @@ function imprimirMensagem() {
 secondBtn.addEventListener('click', imprimirMensagem)
 
 const thirdBtn = window.document.getElementById('other-btn')
-console.log()
 thirdBtn.addEventListener('click', () => {
     console.log('Evento removido.')
     secondBtn.removeEventListener('click', imprimirMensagem)
