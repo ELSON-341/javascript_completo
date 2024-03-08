@@ -47,3 +47,39 @@ const greeting = (name) => {
 
 console.log(greeting('Elson'));
 console.log(greeting());
+
+const user = {
+    name: 'Theo',
+    sayUserName() {
+        setTimeout(function() {
+
+            console.log(this);
+            console.log(`Username: ${this.name}`);
+        },1000)
+    },
+    sayUserNameArrow() {
+        setTimeout(() => {
+            console.log(this);
+            console.log(`Username: ${this.name}`);
+        }, 2000)
+    }
+}
+// user.sayUserName()
+// user.sayUserNameArrow()
+
+// 3 - filter
+
+const arr = [1, 2, 3, 4, 5, 6]
+const heightNumber = arr.filter((n) => n >= 3)
+console.log(heightNumber)
+
+const users = [
+    {name: 'Mathes', available: true},
+    {name: 'João', available: false},
+    {name: 'Maria', available: true},
+    {name: 'Josias', available: false},
+    {name: 'Kaleber', available: true},
+]
+
+const availableUsers = users.filter((user) => user.available)
+console.log(availableUsers);
