@@ -281,8 +281,8 @@ const car = {
 
 // // JSON inválido
 // const badJson = '{"name": Elson, "age": 21}'
-// // const mybadObject = JSON.parse(badJson)
-// // console.log(mybadObject);
+// const mybadObject = JSON.parse(badJson)
+// console.log(mybadObject);
 
 // const myNewJson = JSON.stringify(myObject)
 // console.log(myNewJson);
