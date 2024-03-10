@@ -34,45 +34,56 @@
 // const totalSum = numbers3.reduce((accumulation, num) => accumulation + num, 0)
 // console.log(totalSum)
 
-// 3 - closure
-function counter() {
-    let c = 0
+// // 3 - closure
+// function counter() {
+//     let c = 0
     
-    return function() {
-        c++
-        console.log(c)
-    }
-}
+//     return function() {
+//         c++
+//         console.log(c)
+//     }
+// }
 
-const result = counter()
-result()
-result()
+// const result = counter()
+// result()
+// result()
 
-const sumGenerator = (x) => {
-    return (y) => {
-        return x + y
-    }
-}
+// const sumGenerator = (x) => {
+//     return (y) => {
+//         return x + y
+//     }
+// }
 
-const sumWith5 = sumGenerator(5)
-console.log(`A soma é ${sumWith5(3)}`)
-console.log(sumWith5(9))
+// const sumWith5 = sumGenerator(5)
+// console.log(`A soma é ${sumWith5(3)}`)
+// console.log(sumWith5(9))
 
-function createCache() {
-    const cache = {}
-    return (argument) => {
-        if(cache[argument]) {
-            console.log(`cache hit!`);
-            return cache[argument]
-        } else {
-            console.log('Calculando...')
-            const result = argument * 2
-            cache[argument] = result
-            return result
-        }
-    }
-}
+// function createCache() {
+//     const cache = {}
+//     return (argument) => {
+//         if(cache[argument]) {
+//             console.log(`cache hit!`);
+//             return cache[argument]
+//         } else {
+//             console.log('Calculando...')
+//             const result = argument * 2
+//             cache[argument] = result
+//             return result
+//         }
+//     }
+// }
 
-const calculateWithCache = new createCache()
-console.log(calculateWithCache(5))
-console.log(calculateWithCache(5))
+// const calculateWithCache = createCache()
+// console.log(calculateWithCache(5))
+// console.log(calculateWithCache(5))
+
+// 4 - filter
+const words = ['JavaScript', 'Pythan', 'c', 'Ruby']
+const longWords = words.filter((word) => word['length'] > 5)
+console.log(longWords);
+
+// 5 - map
+const names = ["alice", "bob", "charlie", "david"]
+const formatsNames = names.map((name) => name.charAt(0).toUpperCase() + name.slice(1))
+
+console.log(formatsNames)
