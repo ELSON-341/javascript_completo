@@ -93,8 +93,22 @@ const products = [
 ]
 
 products.map((product) => {
-    if(product.category === 'Roupas')
-    product.onSale = true
+    if(product.category === 'Roupas'){
+        product.onSale = true
+    }
 })
 
 console.log(products)
+
+// 5 - templete literals
+const userName = 'Elson'
+const age = 22
+
+console.log(`O meu nome é ${userName} e tenho ${age} anos.`)
+
+// 6 - destructuing
+const fruits = ['Maçã', 'Mamão', 'Laranja']
+const sortedFruits = fruits.sort((a, b) => a.localeCompare(b))
+const [f1, f2, f3,] = sortedFruits
+
+console.log(f1, f2, f3)
