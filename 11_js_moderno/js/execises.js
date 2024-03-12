@@ -1,4 +1,4 @@
-// // 1 - lest e const
+// 1 - lest e const
 // let age = 21
 
 // const PI = 3.14159
@@ -77,13 +77,21 @@
 // console.log(calculateWithCache(5))
 // console.log(calculateWithCache(5))
 
-// 4 - filter
-const words = ['JavaScript', 'Pythan', 'c', 'Ruby']
-const longWords = words.filter((word) => word['length'] > 5)
-console.log(longWords);
+// // 4 - filter
+// const words = ['JavaScript', 'Pythan', 'c', 'Ruby']
+// const longWords = words.filter((word) => word['length'] > 5)
+// console.log(longWords);
 
-// 5 - map
-const names = ["alice", "bob", "charlie", "david"]
-const formatsNames = names.map((name) => name.charAt(0).toUpperCase() + name.slice(1))
+// // 5 - map
+// const names = ["alice", "bob", "charlie", "david"]
+// const formatsNames = names.map((name) => name.charAt(0).toUpperCase() + name.slice(1))
 
-console.log(formatsNames)
+// console.log(formatsNames)
+
+// 6 - spred operator
+function sum6(a, b, c) {
+    return a + b + c
+}
+
+const values = [2, 1, 2]
+console.log(sum6(...values))
