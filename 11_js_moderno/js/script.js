@@ -124,7 +124,7 @@ const {name: productName, price, category, color} = productsDetails
 
 console.log(`O nome do produto é ${productName}, ele custa R$${price}  e é da cor ${color}`)
 
-// spread operator
+// 7 - spread operator
 const a1 = [1, 2, 3]
 const a2 = [4, 5, 6]
 
@@ -140,3 +140,21 @@ const otherInfo = {km: 100, price: 49999}
 
 const car = {...carName, ...carbrand,... otherInfo}
 console.log(car)
+
+// 8 - class
+class Product {
+    constructor(name, price){
+        this.name = name
+        this.price = price
+    }
+
+    productWithDiscount(disciunt) {
+        return this.price * (100 - disciunt) / 100
+    }
+}
+
+const shirt = new Product('Camiseta', 20)
+console.log(shirt)
+
+console.log(shirt.productWithDiscount(10));
+console.log(shirt.productWithDiscount(15));
