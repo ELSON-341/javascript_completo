@@ -95,3 +95,27 @@ function sum6(a, b, c) {
 
 const values = [2, 1, 2]
 console.log(sum6(...values))
+
+class Person {
+    constructor(name, age) {
+        this.name = name 
+        this.age = age
+    }
+
+    presetation() {
+        console.log(`Olá, meu nome é ${this.name} e tenho ${this.age}`)
+    }
+
+    getOld(n) {
+        this.age = this.age + n
+    }
+
+    setNewName(newName) {
+        this.name = newName
+    }
+}
+
+const person1 = new Person('Elson', 21)
+person1.getOld(1)
+person1.presetation()
+person1.setNewName('Maria')
