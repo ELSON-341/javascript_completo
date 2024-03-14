@@ -119,3 +119,28 @@ const person1 = new Person('Elson', 21)
 person1.getOld(1)
 person1.presetation()
 person1.setNewName('Maria')
+
+// 7 - getters e settters
+class Post {
+    constructor(title, desciption, tags) {
+        this.title = title
+        this.desciption = desciption
+        this.tags = tags
+    }
+
+    get displayTitle() {
+        return `Você está lendo: ${this.title}`
+    }
+
+    set addTags(tags) {
+        const tagsArray = tags.split(', ')
+        this.tags = tagsArray
+    }
+}
+
+const myPost = new Post('Algum post', 'É um post sobre programação')
+console.log(myPost);
+console.log(myPost.displayTitle)
+
+myPost.addTags = 'Python, Java, PHP'
+console.log(myPost)

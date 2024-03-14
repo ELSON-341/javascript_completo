@@ -177,3 +177,4 @@ const hat = new productsWithAttribute('Chápeu', 299.99, ['Preto', 'Amarelo', 'V
 console.log(hat);
 console.log(hat.name);
 hat.showColors()
+
