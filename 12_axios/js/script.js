@@ -5,7 +5,14 @@ console.log(axios);
 // 2 - first request
 const getData = async () => {
     try {
-        const response = await axios.get("https://jsonplaceholder.typicode.com/users")
+        const response = await axios.get("https://jsonplaceholder.typicode.com/users", 
+        // 4 - definindo headers
+        {
+            headers: {
+                'content-type': 'application-json',
+                custom: 'headers',
+            },
+        })
         
         console.log(response);
         return response.data
@@ -41,3 +48,18 @@ const printdata = async () => {
 }
 
 printdata()
+
+// 5 - post
+const form = document.querySelector('#post-form')
+const titleInput = document.querySelector('#title')
+const bodyInput = document.querySelector('#body')
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+
+    axios.post("https://jsonplaceholder.typicode.com/posts", {
+        title: titleInput.value,
+        body: bodyInput.value,
+        userId: 1
+    })
+})
