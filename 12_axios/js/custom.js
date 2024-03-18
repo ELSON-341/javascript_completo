@@ -1,7 +1,7 @@
-const postFetch = axios.create({
-    baseURL : "https://jsonplaceholder.typicode.com",
+const postfetch = axios.create({
+    baseURL : 'https://jsonplaceholder.typicode.com',
     headers: {
-        Accept: 'application/jon',
         Authorization: 'meunovotoken',
+        Accept: 'application/json'
     }
 })

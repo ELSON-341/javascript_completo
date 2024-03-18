@@ -5,7 +5,7 @@ console.log(axios);
 // 2 - first request
 const getData = async () => {
     try {
-        const response = await postFetch.get("/users", 
+        const response = await postfetch.get("/users", 
         // 4 - definindo headers
         {
             headers: {
@@ -57,7 +57,7 @@ const bodyInput = document.querySelector('#body')
 form.addEventListener('submit', (e) => {
     e.preventDefault()
 
-    postFetch.post("/posts", {
+    postfetch.post("/posts", {
         title: titleInput.value, body: bodyInput.value, userId: 1
     })
 })
