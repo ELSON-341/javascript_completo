@@ -1,9 +1,9 @@
 // Requisição
 postfetch.interceptors.request.use(
     function(config) {
-        console.log("Antes da requisição...");
-        return config
-    },
+        console.log('Antes da requisição...');
+        return config 
+    }, 
     function(error) {
         return Promise.reject(error)
     }
@@ -11,9 +11,9 @@ postfetch.interceptors.request.use(
 
 // Resposta
 postfetch.interceptors.response.use(
-    function(response) {
-        console.log('Antes da resposta...');
-        return response
+    function(reponse) {
+        console.log('Antes da resposta.')
+        return reponse
     },
     function(error) {
         return Promise.reject(error)
