@@ -1,71 +1,37 @@
-/*
-// 1 - Nurber
-console.log(`O tipo é: ${typeof 2}`)
-console.log(`O tipo é: ${typeof 2.5}`)
-console.log(`O tipo é: ${typeof -2}`)
+// 1- Number
+console.log(typeof 2)
+console.log(typeof 2.66)
+console.log(typeof -35)
+console.log(typeof -56.88)
 
-// 2 - Ops. ariméticas
-console.log(2 + 5)
-console.log(2 * 5)
-console.log(2 / 5)
-console.log(2 ** 5)
-console.log(2 % 5)
+// 2 - ops. aritmético
+console.log(2 + 4)
+console.log(10 + 5)
+console.log(4 * 5)
+console.log(4 / 2)
+console.log(2 ** 3)
+console.log(9 % 3)
+console.log((5 + (4 *2)))
 
-console.log(2 + 3 * 2)
-
-// 3 - Special numbers
+// 3 - Special Number
 console.log(typeof Infinity)
+
 console.log(typeof -Infinity)
-console.log(12 * 'coffe')
+
+console.log(2 * 'asd')
+
+console.log(typeof NaN)
 
 // 4 - Strings
-console.log( typeof 'Um testo')
-console.log( typeof `Um testo`)
+console.log('Um texto')
+console.log("Mais um texto")
+console.log(`outro texto`)
 
-// 5 - Símbolos especiais em string
-console.log('Um quebra de \nlinha')
-console.log('Tab nas \tstings')
+console.log(typeof 'Um texto')
+
+// 5 - Símbolos especias em strigs
+console.log("Testondo a \nquebra de linha")
+console.log("Espaço de \tTAB")
 
 // 6 - Concatenação
-console.log('Hi, ' + "how's " + 'it ' + 'going?')
-
-// 7 - Intepolação
-console.log(`A soma de 2 + 2 é: ${2 + 2}`)
-
-// 8 - Booleans
-console.log(true)
-console.log(5 > 6)
-console.log(1 < 5)
-
-// 9 - conparação
-console.log(5 <= 5)
-console.log(5 < 5)
-console.log(10 == 10)
-console.log(10 != 8)
-
-// 10 - Idêtico
-console.log(9 == '9')
-console.log(9 === '9')
-console.log(9 != '9')
-console.log(9 !== '9')
-
-// 11 - Operadores lógica
-console.log(true && false)
-console.log(false || false)
-console.log(!false)
-
-console.log(5 > 2 && 2 < 10)
-console.log(5 < 1 || 2 === 2)
-console.log(!5 > 2)*/ 
-
-// 12 - empty values
-console.log(typeof null, typeof undefined)
-console.log(null == undefined)
-console.log(null == false)
-console.log(undefined == false)
-
-// 13 - changen type
-console.log(5 * null)
-console.log('test' * 'opa')
-console.log('10' + 1)
-console.log('10' - 1)
+console.log('Oi, ' + 'tudo ' + 'bem?')
