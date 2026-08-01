@@ -26,7 +26,6 @@ console.log(typeof NaN)
 console.log('Um texto')
 console.log("Mais um texto")
 console.log(`outro texto`)
-
 console.log(typeof 'Um texto')
 
 // 5 - Símbolos especias em strigs
@@ -35,3 +34,34 @@ console.log("Espaço de \tTAB")
 
 // 6 - Concatenação
 console.log('Oi, ' + 'tudo ' + 'bem?')
+
+// 7 - Templete Strings
+console.log(`A soma de 2 + 2 = ${2 + 2}`)
+console.log(`Podemos executar qualquer coisa ${console.log('teste')}`)
+
+// 8 - boolean
+console.log(true)
+
+console.log(2 > 10)
+
+console.log(2 > 1)
+
+console.log(typeof false)
+
+// 9 - Comparações
+console.log(5 <= 5)
+
+console.log(10 == 10)
+
+console.log(10 == 9)
+
+console.log(10 === '10')
+
+console.log(10 != 9)
+
+// 10 - Idêntico
+console.log(9 == '9')
+
+console.log(9 === '9')
+
+console.log(9 !== '9')
