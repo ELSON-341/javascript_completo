@@ -36,3 +36,8 @@ let $teste = 'ok'
 
 console.log(_teste);
 console.log($teste);
+
+//  3 - Prompt
+
+const age = window.prompt('Quan sua idade?')
+window.alert(`Você tem ${age} anos`)
