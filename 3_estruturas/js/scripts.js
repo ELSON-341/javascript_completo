@@ -39,5 +39,18 @@ console.log($teste);
 
 //  3 - Prompt
 
-const age = window.prompt('Quan sua idade?')
-window.alert(`Você tem ${age} anos`)
+// const age = window.prompt('Quan sua idade?')
+// window.alert(`Você tem ${age} anos`)
+
+// 5 - Math
+console.log(Math.max(4, 8, 43, 9))
+
+console.log(Math.floor(5.14))
+
+console.log(Math.ceil(5.14))
+
+// 6 - conssole
+console.log('Teste')
+
+console.error('erro!')
+console.warn('avisa!')
