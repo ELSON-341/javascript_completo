@@ -1,56 +1,117 @@
-// 1 - Variáveis 
-let name = "Elson"
-console.log(name);
+// // 1 - Variáveis 
+// let name = "Elson"
+// console.log(name);
 
-name = 'Elson Santos'
+// name = 'Elson Santos'
 
-console.log(name);
+// console.log(name);
 
-const idade = 24
-console.log(idade);
+// const idade = 24
+// console.log(idade);
 
-// idade = 25
+// // idade = 25
 
-console.log(idade);
+// console.log(idade);
 
-console.log(typeof idade)
-console.log(typeof name)
+// console.log(typeof idade)
+// console.log(typeof name)
 
-// 2 - mais sobre Variáveis
+// // 2 - mais sobre Variáveis
 
-// let 2teste = "Elson"
-// let @test = "esn"
+// // let 2teste = "Elson"
+// // let @test = "esn"
 
-let a = 10, b = 20, c = 30
+// let a = 10, b = 20, c = 30
 
-console.log(a, b, c);
-const nomecompleto = 'Elson Santos'
+// console.log(a, b, c);
+// const nomecompleto = 'Elson Santos'
 
-const nomeCompleto = 'Matheus'
+// const nomeCompleto = 'Matheus'
 
-console.log(nomecompleto);
-console.log(nomeCompleto);
+// console.log(nomecompleto);
+// console.log(nomeCompleto);
 
-let _teste = 'ok'
-let $teste = 'ok'
+// let _teste = 'ok'
+// let $teste = 'ok'
 
-console.log(_teste);
-console.log($teste);
+// console.log(_teste);
+// console.log($teste);
 
-//  3 - Prompt
+// //  3 - Prompt
 
-// const age = window.prompt('Quan sua idade?')
-// window.alert(`Você tem ${age} anos`)
+// // const age = window.prompt('Quan sua idade?')
+// // window.alert(`Você tem ${age} anos`)
 
-// 5 - Math
-console.log(Math.max(4, 8, 43, 9))
+// // 5 - Math
+// console.log(Math.max(4, 8, 43, 9))
 
-console.log(Math.floor(5.14))
+// console.log(Math.floor(5.14))
 
-console.log(Math.ceil(5.14))
+// console.log(Math.ceil(5.14))
 
-// 6 - conssole
-console.log('Teste')
+// // 6 - conssole
+// console.log('Teste')
 
-console.error('erro!')
-console.warn('avisa!')
+// console.error('erro!')
+// console.warn('avisa!')
+
+// 7 - if
+
+const m = 10
+if (m > 5) {
+    console.log('M é maior que 5!')
+}
+
+const user = "Elson"
+
+if (user === 'Elson') {
+    console.log(`Olá ${user}!`)
+}
+
+if (user === 'Elson') {
+    console.log(`Olá ${user}!`)
+}
+
+if (user === 'Maria') {
+    console.log("OláMaria")
+}
+
+console.log(user === user, user === "Maria")
+
+// 8 - else 
+const loggdIn = false
+
+if (loggdIn) {
+    console.log('Está autenticado!')
+} else {
+    console.log('Não está autenticado!')
+}
+
+const q = 10
+const w = 15
+
+if(q > 5 && w > 20) {
+    console.log('Números mais altos')
+} else {
+    console.log('Os números não são mais altos')
+} 
+
+// 9 - else if 
+if (1 > 2) {
+    console.log("teste")
+} else if (2 > 3) {
+    console.log("Teste 2")
+} else if (5 > 1) {
+    console.log("Agora sim!")
+}
+
+const userName = "Matheus"
+const userAge = 31 
+
+if (userName === "José") {
+    console.log(`Bem vindo ${userName}`)
+} else if (userName === "Matheus" && userAge === 31) {
+    console.log(`Olá ${userName}, você tem 31 anos!`)
+} else {
+    console.log('Nenhuma condição aceita!')
+}
