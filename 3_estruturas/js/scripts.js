@@ -57,61 +57,131 @@
 
 // 7 - if
 
-const m = 10
-if (m > 5) {
-    console.log('M é maior que 5!')
-}
+// const m = 10
+// if (m > 5) {
+//     console.log('M é maior que 5!')
+// }
 
-const user = "Elson"
+// const user = "Elson"
 
-if (user === 'Elson') {
-    console.log(`Olá ${user}!`)
-}
+// if (user === 'Elson') {
+//     console.log(`Olá ${user}!`)
+// }
 
-if (user === 'Elson') {
-    console.log(`Olá ${user}!`)
-}
+// if (user === 'Elson') {
+//     console.log(`Olá ${user}!`)
+// }
 
-if (user === 'Maria') {
-    console.log("OláMaria")
-}
+// if (user === 'Maria') {
+//     console.log("OláMaria")
+// }
 
-console.log(user === user, user === "Maria")
+// console.log(user === user, user === "Maria")
 
-// 8 - else 
-const loggdIn = false
+// // 8 - else 
+// const loggdIn = false
 
-if (loggdIn) {
-    console.log('Está autenticado!')
+// if (loggdIn) {
+//     console.log('Está autenticado!')
+// } else {
+//     console.log('Não está autenticado!')
+// }
+
+// const q = 10
+// const w = 15
+
+// if(q > 5 && w > 20) {
+//     console.log('Números mais altos')
+// } else {
+//     console.log('Os números não são mais altos')
+// } 
+
+// // 9 - else if 
+// if (1 > 2) {
+//     console.log("teste")
+// } else if (2 > 3) {
+//     console.log("Teste 2")
+// } else if (5 > 1) {
+//     console.log("Agora sim!")
+// }
+
+// const userName = "Matheus"
+// const userAge = 31 
+
+// if (userName === "José") {
+//     console.log(`Bem vindo ${userName}`)
+// } else if (userName === "Matheus" && userAge === 31) {
+//     console.log(`Olá ${userName}, você tem 31 anos!`)
+// } else {
+//     console.log('Nenhuma condição aceita!')
+// }
+
+// 10 - while
+
+// let p = 0
+
+// while (p < 5) {
+//     console.log(`Passo ${p}`)
+//     p = p + 1
+// }
+
+// // 11 - do while
+// let c = 10
+
+// do {
+//     console.log(`Vaolor de c: ${c}`)
+//     c--
+// } while (c > 1)
+
+// 12 - for
+// for (let t = 0; t < 10; t++) {
+//     console.log(`Teste ${t}`)
+// }
+
+// 13 - indentação
+for (let u = 0; u < 10; u++) {
+if (u * 2 > 10) {
+    console.log(`Maior que 10! ${u}`)
 } else {
-    console.log('Não está autenticado!')
+    if (u / 2 === 0) {
+        console.log('deu 0')
+    }
+}
 }
 
-const q = 10
-const w = 15
+// 14 - break 
+for (let g = 20; g > 10; g--) {
+    console.log(`O valor de g é: ${g}`)
 
-if(q > 5 && w > 20) {
-    console.log('Números mais altos')
-} else {
-    console.log('Os números não são mais altos')
-} 
-
-// 9 - else if 
-if (1 > 2) {
-    console.log("teste")
-} else if (2 > 3) {
-    console.log("Teste 2")
-} else if (5 > 1) {
-    console.log("Agora sim!")
+    if (g === 15) {
+        console.log('O g é 15')
+        break
+    }
 }
 
-const userName = "Matheus"
-const userAge = 31 
+// 15 - continue
+for (let s = 1; s < 10; s++) {
+    if (s % 2 === 0) {
+        console.log('Número par!')
+        continue
+    }
+    console.log(s)
+}
 
-if (userName === "José") {
-    console.log(`Bem vindo ${userName}`)
-} else if (userName === "Matheus" && userAge === 31) {
-    console.log(`Olá ${userName}, você tem 31 anos!`)
-} else {
-    console.log('Nenhuma condição aceita!')
+// 16 - switch 
+const job = 'ads'
+
+switch (job) {
+    case 'Programador':
+        console.log('Você advogado!')
+        break
+    case 'Advogado':
+        console.log('Você é advogado!')
+        break
+    case 'Engenheiro':
+        console.log('Você é um engenheiro')
+        break
+    default:
+        console.log('Profissão não encontrada')
+        break
 }
