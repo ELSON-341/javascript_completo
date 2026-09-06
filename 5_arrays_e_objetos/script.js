@@ -66,7 +66,7 @@ delete car.km
 
 console.log(car)
 
-// 7 - mais sobre ojetos
+// 7 - mais sobre objetos
 const obj = {
     a: 'teste',
     b: true
@@ -81,3 +81,69 @@ const obj2 = {
 Object.assign(obj2, obj)
 
 console.log(obj2);
+
+// 8 - conhecendo melhor os objetos
+console.log(Object.keys(obj))
+console.log(Object.keys(obj2))
+console.log(Object.keys(car))
+
+console.log(Object.entries(car))
+
+// 9 - Mutação 
+const a = {
+    name: 'Elson'
+}
+
+const b = a
+
+console.log(a)
+console.log(b)
+
+console.log(a === b)
+
+a.age = 24
+
+console.log(a)
+console.log(b)
+
+delete b.age
+
+console.log(a)
+console.log(b)
+
+// 10 - Loop em array
+const users = ['Elson', 'João', 'Matheus']
+
+let i = 0 
+while (i < users.length) {
+    console.log(`Listando o Usuário ${users[i]}`)
+    i++
+} 
+
+users.forEach((user) => {
+    console.log(`Listando o Usuário ${user}`)
+})
+
+// 11 - push e pop
+
+const array = ['a', 'b', 'c']
+
+array.push('d')
+console.log(array);
+console.log(array.length);
+
+array.pop()
+
+console.log(array);
+
+const itemRemovido = array.pop()
+
+console.log(itemRemovido)
+
+console.log(array)
+
+array.push('z', 'x', 'y')
+
+console.log(array);
+
+
