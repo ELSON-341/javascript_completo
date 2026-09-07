@@ -147,3 +147,42 @@ array.push('z', 'x', 'y')
 console.log(array);
 
 
+// 12 - shift e unshift
+const letters = ['a', 'b', 'c']
+
+const letter = letters.shift()
+
+console.log(letter)
+console.log(letters)
+
+letters.unshift('p', 'q', 'r')
+letters.unshift('z')
+console.log(letters);
+
+// 13 - indexOf e lastIndexOf
+const myElemente = ['Morango', 'Maçã', 'Abacate', 'Pêra', 'Abacate']
+
+console.log(myElemente.indexOf('Maçã'));
+console.log(myElemente.indexOf('Abacate'));
+console.log(myElemente.lastIndexOf('Abacate'));
+
+console.log(myElemente[2])
+console.log(myElemente[myElemente.indexOf('Abacate')])
+
+console.log(myElemente.lastIndexOf('Mamão'))
+
+// 14 - slice
+const testSlice = ['a', 'b', 'c', 'd', 'e', 'f']
+
+const subArray = testSlice.slice(2, 4 + 1)
+console.log(testSlice)
+console.log(subArray)
+
+const subArray2 = testSlice.slice(10, 20)
+console.log(subArray2)
+
+const subArray3 = testSlice.slice(2)
+console.log(subArray3)
+
+// 15 - foreach
+ 
