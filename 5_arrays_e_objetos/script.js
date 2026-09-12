@@ -185,4 +185,36 @@ const subArray3 = testSlice.slice(2)
 console.log(subArray3)
 
 // 15 - foreach
- 
+const nums = [1, 2, 3, 4, 5]
+
+nums.forEach(function(num) {
+    console.log(`O número é ${num}`)
+})
+const posts = [
+    { title: 'Primeiro post', category: 'PHP'},
+    { title: 'Segundo post', category: 'JavaScript'},
+    { title: 'Terceiro post', category: 'Python'}
+]
+
+posts.forEach((post) => {
+    console.log(`Exibindo post: ${post.title}, da categoria ${post.category}.`)
+    
+})
+
+// 16 - includes
+
+const brands = ['BMW', 'VW', 'Fiat']
+
+console.log(brands.includes('Fiat'))
+console.log(brands.includes('KIA'))
+
+if (brands.includes('BMW')) {
+    console.log('Há carros marca da BMW')
+}
+
+// 17 - reverse 
+const reversetest = [1, 2, 3, 4, 5]
+
+reversetest.reverse()
+
+console.log(reversetest);
