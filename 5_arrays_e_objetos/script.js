@@ -218,3 +218,22 @@ const reversetest = [1, 2, 3, 4, 5]
 reversetest.reverse()
 
 console.log(reversetest);
+
+// 18 - trim
+const trimTest = ' testando \n '
+console.log(trimTest.length);
+
+console.log(trimTest.trim().length)
+
+// 19 - padstart e padend
+const testPadstart = '1'
+
+const newNumber = testPadstart.padStart(4, '0')
+
+console.log(testPadstart)
+console.log(newNumber)
+
+const testPadEnd = newNumber.padEnd(0, 0)
+console.log(testPadEnd)
+
+
