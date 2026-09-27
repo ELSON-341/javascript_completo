@@ -270,3 +270,39 @@ const somaInfinita = (...args) => {
 
 console.log(somaInfinita(1, 2, 3))
 console.log(somaInfinita(1, 20, 34, 3424, 128812, 12723, 12, 23, 54, 12))
+
+// 24 - for of 
+const somaFinita2 = (...args) => {
+    let total = 0
+
+    for (num of args) {
+        total += num
+    }
+
+    return total
+}
+
+console.log(somaFinita2(2, 3, 1)) 
+
+// 25 - destructuring em ojetos
+const userDetails = {
+    fistName: 'Elson',
+    lastName: 'Santos',
+    job: 'Atendente'
+}
+
+const {fistName, lastName, job} = userDetails
+
+console.log(fistName, lastName, job)
+
+// renomear variaves
+const { fistName: primeroNome, asd} = userDetails
+console.log(fistName)
+console.log(asd) 
+
+// 26 - destructuring com array
+const myList = ['Avião', 'sumbmarino', 'Carro', 'Trator']
+const [veiculo1, veiculo2, veiculo3, e, d]  = myList
+
+console.log(veiculo1, veiculo2, veiculo3)
+console.log(d)
