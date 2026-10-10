@@ -82,21 +82,29 @@ console.log(bulldog)
 
 // 6 - função como classe - função construtora
 function criarCachorro(nome, raca) {
-    const cahorro = Object.create({})
+    const cachorro = Object.create({})
 
     cahorro.name = nome
     cahorro.raca  = raca
 
-    return cahorro
+    return cachorro 
 }
 
 const bob = criarCachorro('Bob', 'Vira lata')
 
 console.log(bob);
 
-
 const jack = criarCachorro('Jack', 'Poodle')
 
 console.log(jack);
 
 console.log(Object.getPrototypeOf(jack));
+
+// 7 - função como classe
+function Cachorro(name, raca) {
+    this.nome = name
+    this.raca = raca
+}
+
+const husk = new Cachorro('Ozzy', 'Husky')
+console.log(husk);
