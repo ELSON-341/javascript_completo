@@ -108,3 +108,57 @@ function Cachorro(name, raca) {
 
 const husk = new Cachorro('Ozzy', 'Husky')
 console.log(husk);
+
+// 8 - métodos na função construtora
+Cachorro.prototype.uivar = function() {
+    console.log('Auuuu!');
+    
+}
+
+console.log(Cachorro.prototype)
+
+husk.uivar()
+
+// 9 - classes ES6
+class CachorroClass {
+    constructor(name, raca) {
+        this.name = name
+        this.raca = raca
+    }
+}
+
+const jeff = new CachorroClass('Jeff', 'Labrador')
+console.log(jeff)
+
+console.log(Object.getPrototypeOf(jeff))
+
+// 10 - mais sobre clsses
+class Caminhao {
+    constructor(eixos, cor) {
+        this.eixos = eixos
+        this.cor = cor
+    }
+    descreverCaminhao() {
+        console.log(`Este cominhão tem ${this.eixos} eixos e é ${this.cor}`)
+    }
+}
+
+const scania = new Caminhao(6, 'Vermelha') 
+console.log(scania);
+
+scania.descreverCaminhao()
+
+Caminhao.moto = 4
+
+const c2 = new Caminhao(4, 'Preto')
+console.log(c2);
+
+console.log(c2.moto);
+
+Caminhao.prototype.motor = 4
+
+const c3 = new Caminhao(6, 'Azul')
+console.log(c3);
+
+console.log(c3.motor);
+
