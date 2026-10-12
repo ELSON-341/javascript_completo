@@ -162,3 +162,21 @@ console.log(c3);
 
 console.log(c3.motor);
 
+// 11 - override 
+class Homano {
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+    }
+}
+
+const elson = new Homano('Elson', 24)
+console.log(elson)
+
+ console.log(Homano.prototype.age)
+
+Homano.prototype.age = 'Não definida'
+
+console.log(elson.age);
+
+console.log(Homano.prototype.age)
