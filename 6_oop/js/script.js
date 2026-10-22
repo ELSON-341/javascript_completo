@@ -173,10 +173,59 @@ class Homano {
 const elson = new Homano('Elson', 24)
 console.log(elson)
 
- console.log(Homano.prototype.age)
+console.log(Homano.prototype.age)
 
 Homano.prototype.age = 'Não definida'
 
 console.log(elson.age);
 
 console.log(Homano.prototype.age)
+
+// 12 - symbol
+class Aviao {
+    constructor (marca, turbinas) {
+        this.marca = marca
+        this.turbinas = turbinas
+    }
+}
+
+const asas = Symbol()
+const pilotos = Symbol()
+
+Aviao.prototype[asas] = 2
+
+Aviao.prototype[pilotos] = 3
+
+const boeing = new Aviao('Boeing', 10)
+
+console.log(boeing)
+
+console.log(boeing[asas])
+
+console.log(boeing[pilotos])
+
+// 13 - getters e setter
+class Post {
+    constructor (titulo, descricao, tags) {
+        this.titulo = titulo
+        this.descricao = descricao
+        this.tags = tags
+    }
+
+    get exibirTitulo() {
+        return `Você está lendo: ${this.titulo}`
+    }
+
+    set adicionarTags(tags) {
+        const tagsArray = tags.split(', ')
+        this.tags = tagsArray
+    }
+}
+
+const myPost = new Post('Algum post', 'É um post sobre programação')
+
+console.log(myPost.exibirTitulo)
+
+myPost.adicionarTags = 'Programação, Javascript, js'
+
+console.log(myPost)
