@@ -58,4 +58,35 @@ console.log(a, b)
 
 a.then((v) => console.log(`O resultado é ${v}`)).catch((err) => console.log(`Uu erro ocorreu: ${err}`))
 
-b.then((v) => console.log(`O resultado é ${v}`)).catch((err) => console.log(`Uu erro ocorreu: ${err}`))
+b.then((v) => console.log(`O resultado é ${v}`)).catch((err) => console.log(`Uu erro ocorreu: ${err}`)) 
+
+// 6 - resovendo varias promises 
+const p1 = new Promise((resolve, reject) => {
+    setTimeout(function () {
+        resolve(30)
+    }, 5000)
+})
+
+
+const p2 = Promise.resolve(10 + 10)
+
+const p3 = new Promise((resolve, reject) => {
+    if (30 > 10) {
+        resolve(50)
+    } else {
+        reject('Erro!')
+    }
+})
+
+Promise.all([p1, p2, p3]).then((values) => console.log(values))
+
+// 7 - async function
+async function somaComDelay(a, b) {
+    return a + b
+}
+
+somaComDelay(2, 4).then((value) => {
+    console.log(`O valor da soma ${value}`)
+})
+
+console.log('test async')
