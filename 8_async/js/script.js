@@ -90,3 +90,32 @@ somaComDelay(2, 4).then((value) => {
 })
 
 console.log('test async')
+
+// 8 - async await
+function resolveComDelay() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve('Resolveu a Pomise')
+        })
+    }, 5000)
+}
+
+async function chamandaAsync() {
+    console.log('Chamando a Promise, e esperando o resultado')
+    const resultado = await resolveComDelay()
+    console.log(`O resultado chegou: ${resultado}`)
+}
+
+chamandaAsync()
+
+// 9 - generators
+function* generator() {
+    yield 1
+    yield 2
+    yield 3
+}
+
+const gen = generator()
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
